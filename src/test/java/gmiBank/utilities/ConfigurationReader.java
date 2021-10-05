@@ -3,7 +3,7 @@ package gmiBank.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ConfigurationReader {
+public class  ConfigurationReader {
     static Properties properties;
     static{
         String path = "configuration.properties";
