@@ -1,0 +1,115 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login Page",
+        "description": "",
+        "id": "login-test;login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12313166914,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates go to \"gmi_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmi_url\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LogInStepDefinitions.user_navigates_go_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 257425815,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on iconAccountMenu",
+            "match": {
+              "location": "LogInStepDefinitions.user_clicks_on_iconAccountMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318904900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on  sigInHomePage button",
+            "match": {
+              "location": "LogInStepDefinitions.user_clicks_on_sigInHomePage_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216306560,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User provides username",
+            "match": {
+              "location": "LogInStepDefinitions.user_provides_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 435847102,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User provides password",
+            "match": {
+              "location": "LogInStepDefinitions.user_provides_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 277589355,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on Sign in button",
+            "match": {
+              "location": "LogInStepDefinitions.user_clicks_on_Sign_in_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "LogIn Test",
+    "description": "",
+    "id": "login-test",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/loginpage.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
