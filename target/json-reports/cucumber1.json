@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12313166914,
+              "duration": 27693323600,
               "status": "passed"
             },
             "line": 5,
@@ -30,7 +30,7 @@
           },
           {
             "result": {
-              "duration": 257425815,
+              "duration": 195628800,
               "status": "passed"
             },
             "line": 6,
@@ -42,7 +42,7 @@
           },
           {
             "result": {
-              "duration": 318904900,
+              "duration": 192865600,
               "status": "passed"
             },
             "line": 7,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 216306560,
+              "duration": 163077700,
               "status": "passed"
             },
             "line": 8,
@@ -66,7 +66,7 @@
           },
           {
             "result": {
-              "duration": 435847102,
+              "duration": 277199500,
               "status": "passed"
             },
             "line": 9,
@@ -78,7 +78,7 @@
           },
           {
             "result": {
-              "duration": 277589355,
+              "duration": 248644900,
               "status": "passed"
             },
             "line": 10,
@@ -100,7 +100,7 @@
     "description": "",
     "id": "login-test",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/loginpage.feature",
+    "uri": "src\\test\\resources\\features\\loginpage.feature",
     "tags": [
       {
         "name": "@login",
