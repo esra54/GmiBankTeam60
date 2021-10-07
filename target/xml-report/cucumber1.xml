@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.822866">
-    <testcase classname="LogIn Test" name="Login Page" time="13.822866">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.775692">
+    <testcase classname="LogIn Test" name="Login Page" time="28.775692">
         <system-out>
             <![CDATA[Given User navigates go to "gmi_url"........................................passed
 And User clicks on iconAccountMenu..........................................passed
