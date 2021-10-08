@@ -1,0 +1,46 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "TC0107 any user to register with valid credentials",
+        "description": "  validating the success message",
+        "id": "us001-registration-page;tc0107-any-user-to-register-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user navigate homepage \"gmibank_url\"",
+            "match": {},
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@win"
+          }
+        ]
+      }
+    ],
+    "name": "US001 Registration Page",
+    "description": "",
+    "id": "us001-registration-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/US_001.feature",
+    "tags": [
+      {
+        "name": "@win",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
