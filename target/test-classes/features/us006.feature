@@ -1,3 +1,5 @@
+
+
 Feature: User info segment (User Settings) should be editable on Homepage
   Background: Go to url
     Given  Navigate go to "gmi_url"

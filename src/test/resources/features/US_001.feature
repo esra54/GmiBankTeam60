@@ -1,4 +1,4 @@
-@win
+
 Feature: US001 Registration Page
 
   Scenario: TC0107 any user to register with valid credentials

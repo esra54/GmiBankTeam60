@@ -53,10 +53,10 @@ public class US007StepDefinitions {
         Select select = new Select(selectElement);
         List<WebElement> allOptions =select.getOptions();
         for (WebElement element: allOptions){
-            System.out.println("language displayed "+ element.getText());
-
-            Assert.assertEquals(ConfigurationReader.getProperty("Expected_languages_1"), element.getText().indexOf(0));
-
+ boolean languages= element.getText().equals("English") || element.getText().equals("Türkçe");
+ Assert.assertTrue("User should see English or Türkçe", languages);
+            System.out.println("there is only  English and Türkçe  displayed on Languauge dropdown menu");
+        //     Condition veya ile calistigi icin boolean kullandik
 
         }
 

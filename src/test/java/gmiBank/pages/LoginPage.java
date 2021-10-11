@@ -1,6 +1,9 @@
 package gmiBank.pages;
 
+
 import gmiBank.utilities.ConfigurationReader;
+
+
 import gmiBank.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +11,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     public LoginPage(){
+
         PageFactory.initElements(Driver.getDriver(),this);
+
+        PageFactory.initElements(Driver.getDriver(), this);
+
     }
 
     @FindBy(id = "account-menu")
@@ -36,6 +43,7 @@ public class LoginPage {
     @FindBy(xpath = "//*[span='My Operations']")
     public WebElement myOperations;
 
+
     public void loginExecution(){
 
         iconAccountMenu.click();
@@ -44,5 +52,6 @@ public class LoginPage {
         passwordBox.sendKeys(ConfigurationReader.getProperty("user_password"));
         signInBtn.click();
     }
+
 
 }

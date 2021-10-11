@@ -1,8 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0.013392">
-    <testcase classname="US001 Registration Page" name="TC0107 any user to register with valid credentials" time="0.013392">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="5" tests="5" time="0.042936">
+    <testcase classname="System should allow Admin to create a new Account" name="US019_TC01 User should create a description for the new account and it cannot be blank" time="0.010542">
         <skipped>
-            <![CDATA[Given user navigate homepage "gmibank_url"..................................undefined
+            <![CDATA[Then Click the menu item....................................................undefined
+And Click on the sign in item...............................................undefined
+And Enter the valid username on the username box............................undefined
+And Enter the valid password on the New password box........................undefined
+And Click English on language dropdown menu.................................undefined
+And Click the My Operation item.............................................undefined
+And Click the Manage Account item...........................................undefined
+And Click Create a new Account..............................................undefined
+Then Fill the Description Textbox...........................................undefined
+And Check the Description TextBox is filled.................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="System should allow Admin to create a new Account" name="US019_TC02 User should provide a balance for the first time account creation as Dollar" time="0.003507">
+        <skipped>
+            <![CDATA[Then Click the menu item....................................................undefined
+And Click on the sign in item...............................................undefined
+And Enter the valid username on the username box............................undefined
+And Enter the valid password on the New password box........................undefined
+And Click English on language dropdown menu.................................undefined
+And Click the My Operation item.............................................undefined
+And Click the Manage Account item...........................................undefined
+And Click Create a new Account..............................................undefined
+Then Fill the Description Textbox with digits...............................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="System should allow Admin to create a new Account" name="US019_TC03 User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING" time="0.001866">
+        <skipped>
+            <![CDATA[Then Click the menu item....................................................undefined
+And Click on the sign in item...............................................undefined
+And Enter the valid username on the username box............................undefined
+And Enter the valid password on the New password box........................undefined
+And Click English on language dropdown menu.................................undefined
+And Click the My Operation item.............................................undefined
+And Click the Manage Account item...........................................undefined
+And Click Create a new Account..............................................undefined
+Then select an account type as CHECKING.....................................undefined
+And select an account type as SAVING........................................undefined
+And select an account type as CREDIT_CARD...................................undefined
+And select an account type as INVESTING.....................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="System should allow Admin to create a new Account" name="US019_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED" time="0.014963">
+        <skipped>
+            <![CDATA[Then Click the menu item....................................................undefined
+And Click on the sign in item...............................................undefined
+And Enter the valid username on the username box............................undefined
+And Enter the valid password on the New password box........................undefined
+And Click English on language dropdown menu.................................undefined
+And Click the My Operation item.............................................undefined
+And Click the Manage Account item...........................................undefined
+And Click Create a new Account..............................................undefined
+Then Account status should be defined as ACTIVE.............................undefined
+And Account status should be defined as SUSPENDED...........................undefined
+And Account status should be defined as  CLOSED.............................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="System should allow Admin to create a new Account" name="US019_TC05 User can select an employee from the drop-down" time="0.012058">
+        <skipped>
+            <![CDATA[Then Click the menu item....................................................undefined
+And Click on the sign in item...............................................undefined
+And Enter the valid username on the username box............................undefined
+And Enter the valid password on the New password box........................undefined
+And Click English on language dropdown menu.................................undefined
+And Click the My Operation item.............................................undefined
+And Click the Manage Account item...........................................undefined
+And Click Create a new Account..............................................undefined
+Then select an employee from the drop-down..................................undefined
 ]]>
         </skipped>
     </testcase>

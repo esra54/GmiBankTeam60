@@ -1,3 +1,5 @@
+
+
 Feature: User info segment (User Settings) should be editable on Homepage
   Background: Go to url
     Given  Navigate go to "gmi_url"
@@ -13,7 +15,7 @@ Feature: User info segment (User Settings) should be editable on Homepage
     And Check if the Language item is displayed
 
 
-  Scenario: US_g006_TC02
+  Scenario: US_006_TC02
 
     Then Check if English is displayed on Languauge dropdown menu
     And Check if Turkish is displayed on Language dropdown menu
