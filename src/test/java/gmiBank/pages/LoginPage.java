@@ -37,6 +37,7 @@ public class LoginPage {
     @FindBy(xpath = "//*[span='My Operations']")
     public WebElement myOperations;
 
+
     @FindBy(xpath = "//input[@name='middleInitial']")
     public WebElement middleInitial;
 
@@ -95,6 +96,16 @@ public class LoginPage {
     public WebElement createDate;
 
 
+
+
+    public void loginExecution(){
+
+        iconAccountMenu.click();
+        signInhomePage.click();
+        usernameBox.sendKeys(ConfigurationReader.getProperty("usernameUSA"));
+        passwordBox.sendKeys(ConfigurationReader.getProperty("passwordUSA"));
+        signInBtn.click();
+    }
 
 
 }

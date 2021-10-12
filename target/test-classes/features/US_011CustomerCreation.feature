@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @Us11
 Feature: US_011Customer Creation
   Background: US_011
@@ -26,3 +27,21 @@ Feature: US_011Customer Creation
   Scenario: US_011_05User can select Zelle Enrolled optionally and save it
     And User click zelle enrolled check box
     Then User click save button
+=======
+Feature: US_011Customer Creation
+
+  Scenario: US_011_01 Any field on the registration page should not be left blank
+  Given User go to Url
+  And User click Menu Icon
+  And User click SignIn Option
+  And User enter valid Username
+  And User enter valid Password
+  And User click second SignIn Button
+  And User click My Operations
+  And User select Manage Custormers
+  And User click Create a new Customer
+  And User enter SSN
+  And User click Search button
+  And User sees all his/her registration info populated
+  Then User sees entered today date and time
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933

@@ -6,6 +6,7 @@ import cucumber.api.java.en.Then;
 import gmiBank.pages.LoginPage;
 import gmiBank.utilities.ConfigurationReader;
 import gmiBank.utilities.Driver;
+import org.testng.Assert;
 
 public class LogInStepDefinitions {
 
@@ -40,5 +41,8 @@ public class LogInStepDefinitions {
     @Then("User clicks on Sign in button")
     public void user_clicks_on_Sign_in_button() {
        logInPage.signInBtn.click();
+
     }
+
+
 }

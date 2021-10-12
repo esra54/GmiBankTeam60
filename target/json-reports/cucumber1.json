@@ -4,6 +4,7 @@
     "elements": [
       {
         "line": 3,
+<<<<<<< HEAD
         "name": "US_011",
         "description": "",
         "type": "background",
@@ -124,11 +125,17 @@
         "name": "US_011_01 Any field on the registration page should not be left blank",
         "description": "",
         "id": "us-011customer-creation;us-011-01-any-field-on-the-registration-page-should-not-be-left-blank",
+=======
+        "name": "employee should sign in",
+        "description": "",
+        "id": "an-employee-can-create-new-account;employee-should-sign-in",
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "status": "undefined"
             },
             "line": 18,
@@ -153,6 +160,21 @@
           {
             "result": {
               "status": "undefined"
+=======
+              "duration": 7378608278,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "An employee navigate signin url \"gmibank_signin_url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gmibank_signin_url\"",
+                  "offset": 32
+                }
+              ],
+              "location": "US_013StepDefinitions.an_employee_navigate_signin_url(String)"
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
             },
             "line": 4,
             "name": "User go to Url",
@@ -161,6 +183,7 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "undefined"
             },
             "line": 5,
@@ -444,6 +467,39 @@
           {
             "result": {
               "status": "undefined"
+=======
+              "duration": 285206735,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "provides username",
+            "match": {
+              "location": "US_013StepDefinitions.provides_username()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204080896,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "provides password",
+            "match": {
+              "location": "US_013StepDefinitions.provides_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 160635189,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on sign in button",
+            "match": {
+              "location": "US_013StepDefinitions.clicks_on_sign_in_button()"
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
             },
             "line": 5,
             "name": "User click Menu Icon",
@@ -479,6 +535,7 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "undefined"
             },
             "line": 9,
@@ -703,20 +760,253 @@
           {
             "result": {
               "status": "undefined"
+=======
+              "duration": 1396511915,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "clicks on language menu",
+            "match": {
+              "location": "US_013StepDefinitions.clicks_on_language_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 203737498,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clicks on English",
+            "match": {
+              "location": "US_013StepDefinitions.clicks_on_English()"
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
             },
             "line": 31,
             "name": "User click save button",
             "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 401667441,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "clicks on manage accounts",
+            "match": {
+              "location": "US_013StepDefinitions.clicks_on_manage_accounts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 369495760,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "clicks on create new account",
+            "match": {
+              "location": "US_013StepDefinitions.clicks_on_create_new_account()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
+            "name": "@employeecreateaccount"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "US013_TC01 User should create a description for the new account and it cannot be blank",
+        "description": "",
+        "id": "an-employee-can-create-new-account;us013-tc01-user-should-create-a-description-for-the-new-account-and-it-cannot-be-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 801366232,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Employee writes description as Saving Account",
+            "match": {
+              "location": "US_013StepDefinitions.employeeWritesDescriptionAsSavingAccount()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@employeecreateaccount"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "US013_TC02 User should provide a balance for the first time account creation as Dollar",
+        "description": "",
+        "id": "an-employee-can-create-new-account;us013-tc02-user-should-provide-a-balance-for-the-first-time-account-creation-as-dollar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 227056087,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "employee clicks on balance text box",
+            "match": {
+              "location": "US_013StepDefinitions.employeeClicksOnBalanceTextBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107229227,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "provide balance as number",
+            "match": {
+              "location": "US_013StepDefinitions.provideBalanceAsNumber()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@employeecreateaccount"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "US013_TC03 User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING",
+        "description": "",
+        "id": "an-employee-can-create-new-account;us013-tc03-user-can-select-an-account-type-as-checking--saving--credit-card-or-investing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 260031225,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Employee clicks on account type dropdown",
+            "match": {
+              "location": "US_013StepDefinitions.employeeClicksOnAccountType()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133540226,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "selects its status such as CHECKING",
+            "match": {
+              "location": "US_013StepDefinitions.typesItsStatusSuchAsCHECKING()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@employeecreateaccount"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "US013_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED",
+        "description": "",
+        "id": "an-employee-can-create-new-account;us013-tc04-account-status-should-be-defined-as-active--suspended-or-closed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 449788982,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Employee clicks on account status type dropdown",
+            "match": {
+              "location": "US_013StepDefinitions.employeeClicksOnAccountStatusTypeDropdown()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78892161,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "clicks on its type such as ACTIVE",
+            "match": {
+              "location": "US_013StepDefinitions.clicksOnItsTypeSuchAsACTIVE()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@employeecreateaccount"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "US013_TC05 User can select an employee from the drop-down",
+        "description": "",
+        "id": "an-employee-can-create-new-account;us013-tc05-user-can-select-an-employee-from-the-drop-down",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 448831583,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Employee clicks on employee",
+            "match": {
+              "location": "US_013StepDefinitions.employeeClicksOnEmployee()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22150608,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "verify it is selected or not",
+            "match": {
+              "location": "US_013StepDefinitions.verifyItIsSelectedOrNot()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+<<<<<<< HEAD
             "name": "@Us11"
+=======
+            "name": "@employeecreateaccount"
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "US_011Customer Creation",
     "description": "",
     "id": "us-011customer-creation",
@@ -725,6 +1015,16 @@
     "tags": [
       {
         "name": "@Us11",
+=======
+    "name": "An employee can create new account",
+    "description": "",
+    "id": "an-employee-can-create-new-account",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/US_013.feature",
+    "tags": [
+      {
+        "name": "@employeecreateaccount",
+>>>>>>> 17e8cafcc1213dcaff7f82a81aade605e43db933
         "type": "Tag",
         "location": {
           "line": 1,
