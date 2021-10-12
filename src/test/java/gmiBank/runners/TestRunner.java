@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         glue = "gmiBank/stepDefinitions",
 
 
-        tags = "@login",
+        tags = "@employeecreateaccount",
         dryRun = false
 
 
