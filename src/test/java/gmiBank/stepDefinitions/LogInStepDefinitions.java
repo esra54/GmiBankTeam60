@@ -14,6 +14,7 @@ public class LogInStepDefinitions {
     @Given("User navigates go to {string}")
     public void user_navigates_go_to(String gmi_url) {
         Driver.getDriver().get(ConfigurationReader.getProperty(gmi_url));
+
     }
 
     @Given("User clicks on iconAccountMenu")

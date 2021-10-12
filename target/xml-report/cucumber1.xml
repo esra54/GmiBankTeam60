@@ -1,14 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="28.775692">
-    <testcase classname="LogIn Test" name="Login Page" time="28.775692">
-        <system-out>
-            <![CDATA[Given User navigates go to "gmi_url"........................................passed
-And User clicks on iconAccountMenu..........................................passed
-And User clicks on  sigInHomePage button....................................passed
-And User provides username..................................................passed
-And User provides password..................................................passed
-Then User clicks on Sign in button..........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="5" tests="5" time="0.032075">
+    <testcase classname="US_011Customer Creation" name="US_011_01 Any field on the registration page should not be left blank" time="0.015508">
+        <skipped>
+            <![CDATA[Given User go to Url........................................................undefined
+And User click Menu Icon....................................................undefined
+And User click SignIn Option................................................undefined
+And User enter valid Username...............................................undefined
+And User enter valid Password...............................................undefined
+And User click second SignIn Button.........................................undefined
+And User click My Operations................................................undefined
+And User select Manage Custormers...........................................undefined
+And User click Create a new Customer........................................undefined
+And User enter SSN..........................................................undefined
+And User click Search button................................................undefined
+And User sees all his/her registration info populated.......................undefined
+Then User sees entered today date and time..................................undefined
 ]]>
-        </system-out>
+        </skipped>
+    </testcase>
+    <testcase classname="US_011Customer Creation" name="US_011_02The date should be created as month, day, year, hour and minute" time="0.003011">
+        <skipped>
+            <![CDATA[Given User go to Url........................................................undefined
+And User click Menu Icon....................................................undefined
+And User click SignIn Option................................................undefined
+And User enter valid Username...............................................undefined
+And User enter valid Password...............................................undefined
+And User click second SignIn Button.........................................undefined
+And User click My Operations................................................undefined
+And User select Manage Custormers...........................................undefined
+And User click Create a new Customer........................................undefined
+And User enter SSN..........................................................undefined
+And User click Search button................................................undefined
+And User sees all his/her registration info populated.......................undefined
+Then User sees correct order date...........................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="US_011Customer Creation" name="US_011_03User can choose a user from the registration and it cannot be blank" time="0.006516">
+        <skipped>
+            <![CDATA[Given User go to Url........................................................undefined
+And User click Menu Icon....................................................undefined
+And User click SignIn Option................................................undefined
+And User enter valid Username...............................................undefined
+And User enter valid Password...............................................undefined
+And User click second SignIn Button.........................................undefined
+And User click My Operations................................................undefined
+And User select Manage Custormers...........................................undefined
+And User click Create a new Customer........................................undefined
+And User enter SSN..........................................................undefined
+And User click Search button................................................undefined
+And User sees all his/her registration info populated.......................undefined
+Then User choose valid user.................................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="US_011Customer Creation" name="US_011_04There user can choose an account created on manage accounts" time="0.004101">
+        <skipped>
+            <![CDATA[Given User go to Url........................................................undefined
+And User click Menu Icon....................................................undefined
+And User click SignIn Option................................................undefined
+And User enter valid Username...............................................undefined
+And User enter valid Password...............................................undefined
+And User click second SignIn Button.........................................undefined
+And User click My Operations................................................undefined
+And User select Manage Custormers...........................................undefined
+And User click Create a new Customer........................................undefined
+And User enter SSN..........................................................undefined
+And User click Search button................................................undefined
+And User sees all his/her registration info populated.......................undefined
+Then User choose valid account..............................................undefined
+]]>
+        </skipped>
+    </testcase>
+    <testcase classname="US_011Customer Creation" name="US_011_05User can select Zelle Enrolled optionally and save it" time="0.002939">
+        <skipped>
+            <![CDATA[Given User go to Url........................................................undefined
+And User click Menu Icon....................................................undefined
+And User click SignIn Option................................................undefined
+And User enter valid Username...............................................undefined
+And User enter valid Password...............................................undefined
+And User click second SignIn Button.........................................undefined
+And User click My Operations................................................undefined
+And User select Manage Custormers...........................................undefined
+And User click Create a new Customer........................................undefined
+And User enter SSN..........................................................undefined
+And User click Search button................................................undefined
+And User sees all his/her registration info populated.......................undefined
+And User click zelle enrolled check box.....................................undefined
+Then User click save button.................................................undefined
+]]>
+        </skipped>
     </testcase>
 </testsuite>

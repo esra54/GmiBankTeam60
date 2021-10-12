@@ -3,107 +3,728 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "Login Page",
+        "line": 3,
+        "name": "US_011",
         "description": "",
-        "id": "login-test;login-page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User go to Url",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User click Menu Icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User click SignIn Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enter valid Username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enter valid Password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User click second SignIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click My Operations",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User select Manage Custormers",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click Create a new Customer",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enter SSN",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User click Search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User sees all his/her registration info populated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "US_011_01 Any field on the registration page should not be left blank",
+        "description": "",
+        "id": "us-011customer-creation;us-011-01-any-field-on-the-registration-page-should-not-be-left-blank",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 27693323600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 5,
-            "name": "User navigates go to \"gmi_url\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"gmi_url\"",
-                  "offset": 21
-                }
-              ],
-              "location": "LogInStepDefinitions.user_navigates_go_to(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 195628800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks on iconAccountMenu",
-            "match": {
-              "location": "LogInStepDefinitions.user_clicks_on_iconAccountMenu()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 192865600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User clicks on  sigInHomePage button",
-            "match": {
-              "location": "LogInStepDefinitions.user_clicks_on_sigInHomePage_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 163077700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User provides username",
-            "match": {
-              "location": "LogInStepDefinitions.user_provides_username()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 277199500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User provides password",
-            "match": {
-              "location": "LogInStepDefinitions.user_provides_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 248644900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User clicks on Sign in button",
-            "match": {
-              "location": "LogInStepDefinitions.user_clicks_on_Sign_in_button()"
-            },
+            "line": 18,
+            "name": "User sees entered today date and time",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@Us11"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "US_011",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User go to Url",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User click Menu Icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User click SignIn Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enter valid Username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enter valid Password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User click second SignIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click My Operations",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User select Manage Custormers",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click Create a new Customer",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enter SSN",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User click Search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User sees all his/her registration info populated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "US_011_02The date should be created as month, day, year, hour and minute",
+        "description": "",
+        "id": "us-011customer-creation;us-011-02the-date-should-be-created-as-month--day--year--hour-and-minute",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "User sees correct order date",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Us11"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "US_011",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User go to Url",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User click Menu Icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User click SignIn Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enter valid Username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enter valid Password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User click second SignIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click My Operations",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User select Manage Custormers",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click Create a new Customer",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enter SSN",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User click Search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User sees all his/her registration info populated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "US_011_03User can choose a user from the registration and it cannot be blank",
+        "description": "",
+        "id": "us-011customer-creation;us-011-03user-can-choose-a-user-from-the-registration-and-it-cannot-be-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "User choose valid user",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Us11"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "US_011",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User go to Url",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User click Menu Icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User click SignIn Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enter valid Username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enter valid Password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User click second SignIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click My Operations",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User select Manage Custormers",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click Create a new Customer",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enter SSN",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User click Search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User sees all his/her registration info populated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "US_011_04There user can choose an account created on manage accounts",
+        "description": "",
+        "id": "us-011customer-creation;us-011-04there-user-can-choose-an-account-created-on-manage-accounts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User choose valid account",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Us11"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "US_011",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User go to Url",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User click Menu Icon",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User click SignIn Option",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enter valid Username",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User enter valid Password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User click second SignIn Button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click My Operations",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User select Manage Custormers",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click Create a new Customer",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enter SSN",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User click Search button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User sees all his/her registration info populated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "US_011_05User can select Zelle Enrolled optionally and save it",
+        "description": "",
+        "id": "us-011customer-creation;us-011-05user-can-select-zelle-enrolled-optionally-and-save-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "User click zelle enrolled check box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "User click save button",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Us11"
           }
         ]
       }
     ],
-    "name": "LogIn Test",
+    "name": "US_011Customer Creation",
     "description": "",
-    "id": "login-test",
+    "id": "us-011customer-creation",
     "keyword": "Feature",
-    "uri": "src\\test\\resources\\features\\loginpage.feature",
+    "uri": "src\\test\\resources\\features\\US_011CustomerCreation.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@Us11",
         "type": "Tag",
         "location": {
           "line": 1,
