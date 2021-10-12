@@ -24,4 +24,14 @@ public class DateUtil {
         String today = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date());
         return today;
     }
+    public static String todaysTime1() {
+        String today = new SimpleDateFormat("hh:mm").format(new Date());
+        return today;
+    }
+
+    public static String todaysDate1() {
+        String today = new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+        return today;
+    }
+
 }
