@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "employee should sign in",
+  "name": "employee should sign in and clicks manage accounts",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -235,6 +235,16 @@ formatter.step({
 });
 formatter.match({
   "location": "US_013StepDefinitions.verifyItIsSelectedOrNot()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "employee clicks on save button to create an account",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "US_013StepDefinitions.employeeClicksOnSaveButtonToCreateAnAccount()"
 });
 formatter.result({
   "status": "passed"

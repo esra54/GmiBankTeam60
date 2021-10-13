@@ -1,7 +1,7 @@
 @dateCreation
 Feature: Date should be created on the time of account creation
   Scenario: Employee should sign in with valid credentials
-    Given Employee should sign in his account
+    Given Employee should sign in his account and clicks manage accounts
 Scenario:US014_TC01 The date cannot be typed earlier, in the past, at the time of creation an account
 When user provides all required places such as description,account
 And user enters today's date on the Create Datetextbox and verifies it is correct date ot not
