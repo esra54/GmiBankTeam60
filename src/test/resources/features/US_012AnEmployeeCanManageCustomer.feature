@@ -26,3 +26,16 @@ Feature:US_012_An Employee can manage Customer
   Scenario: There should be an Edit button where all customer information can be populated
     Then User clicks edit button
     And User sees all editable information populated
+
+  Scenario: The Edit portal can allow user to create or update the user info
+   # When User click edit button
+    Then User update information
+    And User back customerHomePage
+
+  Scenario: User can delete a customer, but seeing a message if the user is sure about deletion
+    When User click delete button
+    Then User sees confirm delete operation message
+    And User click second delete button
+    And User sees success edit message
+
+
