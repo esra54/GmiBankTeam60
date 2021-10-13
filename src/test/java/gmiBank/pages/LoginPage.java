@@ -108,4 +108,15 @@ public class LoginPage {
     }
 
 
+
+    public void loginExecution1(){
+
+        iconAccountMenu.click();
+        signInhomePage.click();
+        usernameBox.sendKeys(ConfigurationReader.getProperty("employee_username"));
+        passwordBox.sendKeys(ConfigurationReader.getProperty("employee_password"));
+        signInBtn.click();
+    }
+
+
 }
