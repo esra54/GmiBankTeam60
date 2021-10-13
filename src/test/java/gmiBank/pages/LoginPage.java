@@ -44,14 +44,7 @@ public class LoginPage {
     public WebElement myOperations;
 
 
-    public void loginExecution(){
 
-        iconAccountMenu.click();
-        signInhomePage.click();
-        usernameBox.sendKeys(ConfigurationReader.getProperty("user_username"));
-        passwordBox.sendKeys(ConfigurationReader.getProperty("user_password"));
-        signInBtn.click();
-    }
 
 
 }

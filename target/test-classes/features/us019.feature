@@ -31,7 +31,8 @@ And Check the Description TextBox is filled
   And select an account type as INVESTING
 
   Scenario: US019_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED
-  Then Account status should be defined as ACTIVE
+    Then  click acount status dropdown
+  And  Account status should be defined as ACTIVE
   And Account status should be defined as SUSPENDED
   And Account status should be defined as  CLOSED
 
