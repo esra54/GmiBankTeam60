@@ -3,6 +3,7 @@
     "line": 2,
     "elements": [
       {
+
         "line": 7,
         "name": "",
         "description": "",
@@ -52,12 +53,15 @@
         "name": "US_002 TC_01 SSNTextBox on the registration page should not be left blank",
         "description": "",
         "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-01-ssntextbox-on-the-registration-page-should-not-be-left-blank",
+
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+
               "duration": 109151800,
+
               "status": "passed"
             },
             "line": 13,
@@ -69,7 +73,9 @@
           },
           {
             "result": {
+
               "duration": 140732100,
+
               "status": "passed"
             },
             "line": 14,
@@ -81,7 +87,9 @@
           },
           {
             "result": {
+
               "duration": 142604000,
+
               "status": "passed"
             },
             "line": 15,
@@ -107,7 +115,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 1187964900,
+
               "status": "passed"
             },
             "line": 8,
@@ -119,7 +129,9 @@
           },
           {
             "result": {
+
               "duration": 210651900,
+
               "status": "passed"
             },
             "line": 9,
@@ -131,7 +143,9 @@
           },
           {
             "result": {
+
               "duration": 214785500,
+
               "status": "passed"
             },
             "line": 10,
@@ -153,7 +167,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 102125900,
+
               "status": "passed"
             },
             "line": 18,
@@ -165,7 +181,9 @@
           },
           {
             "result": {
+
               "duration": 123185900,
+
               "status": "passed"
             },
             "line": 19,
@@ -203,7 +221,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 784184100,
+
               "status": "passed"
             },
             "line": 8,
@@ -249,7 +269,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 108548500,
+
               "status": "passed"
             },
             "line": 23,
@@ -261,7 +283,9 @@
           },
           {
             "result": {
+
               "duration": 176520700,
+
               "status": "passed"
             },
             "line": 24,
@@ -345,7 +369,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 83363500,
+
               "status": "passed"
             },
             "line": 28,
@@ -357,7 +383,9 @@
           },
           {
             "result": {
+
               "duration": 102269700,
+
               "status": "passed"
             },
             "line": 29,
@@ -441,7 +469,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 111556000,
+
               "status": "passed"
             },
             "line": 33,
@@ -453,7 +483,9 @@
           },
           {
             "result": {
+
               "duration": 150343200,
+
               "status": "passed"
             },
             "line": 34,
@@ -537,7 +569,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 118643000,
+
               "status": "passed"
             },
             "line": 38,
@@ -549,7 +583,9 @@
           },
           {
             "result": {
+
               "duration": 116759600,
+
               "status": "passed"
             },
             "line": 39,
@@ -561,6 +597,7 @@
           },
           {
             "result": {
+
               "duration": 50671100,
               "status": "passed"
             },
@@ -1149,6 +1186,7 @@
               "location": "US_002StepDefinition.userSeeAnInvalidEmailErrorMessage()"
             },
             "keyword": "Then "
+
           }
         ],
         "tags": [

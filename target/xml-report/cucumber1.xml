@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
 <testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="37.123688">
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_01 SSNTextBox on the registration page should not be left blank" time="18.338495">
+
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
 And User clicks on  icon....................................................passed
@@ -11,7 +13,9 @@ Then User see an SSN error message..........................................pass
 ]]>
         </system-out>
     </testcase>
+
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_02 firstNameTextBox on the registration page should not be left blank" time="1.931671">
+
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
 And User clicks on  icon....................................................passed
@@ -22,7 +26,9 @@ Then User see an firstname error message....................................pass
 ]]>
         </system-out>
     </testcase>
+
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_03 lastNameTextBox on the registration page should not be left blank" time="1.82963">
+
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
 And User clicks on  icon....................................................passed
@@ -33,7 +39,9 @@ Then User see an lastname error message.....................................pass
 ]]>
         </system-out>
     </testcase>
+
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_04 adresTextBox on the registration page should not be left blank" time="1.693436">
+
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
 And User clicks on  icon....................................................passed
@@ -44,7 +52,9 @@ Then User see an adres error message........................................pass
 ]]>
         </system-out>
     </testcase>
+
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_05 phoneNumberTextBox on the registration page should not be left blank" time="1.739388">
+
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
 And User clicks on  icon....................................................passed
@@ -55,6 +65,7 @@ Then User see an phoneNumber error message..................................pass
 ]]>
         </system-out>
     </testcase>
+
     <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_06 userNameTextBox on the registration page should not be left blank" time="1.703841">
         <system-out>
             <![CDATA[Given User go to  URL.......................................................passed
@@ -63,6 +74,7 @@ And User clicks on registerButton...........................................pass
 And User click on the userNameTextBox.......................................passed
 And User does not enter the userNameTextBox.................................passed
 Then User see an userName error message.....................................passed
+
 ]]>
         </system-out>
     </testcase>
