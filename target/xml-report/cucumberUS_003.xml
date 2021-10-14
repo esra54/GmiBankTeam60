@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="26.578853">
+    <testcase classname="Registration page should restrict password usage to a secure and high level passcode" name="There should be at least one lowercase char for stronger password and see the level chart change accordingly" time="26.578853">
+        <system-out>
+            <![CDATA[Given User go to the GMi Bank home page.....................................passed
+And User click on user icon.................................................passed
+And User click on the registration menu.....................................passed
+And Click on New Password textbox...........................................passed
+Then Assert that strenght bar is red........................................passed
+And Enter a password with one uppercase letter..............................passed
+And Observe that strenght bar is yellow.....................................passed
+And Enter one lowercase letter to password test box.........................passed
+And Strength Bar must be green..............................................passed
+And Click on password confirmation textbox..................................passed
+Then Copy new password text box value to new password confirmation texbox...passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

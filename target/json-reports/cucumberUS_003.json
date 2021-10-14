@@ -1,0 +1,181 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User go to the gmi bank url",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24815183600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User go to the GMi Bank home page",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.user_go_to_the_GMi_Bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231690500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on user icon",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.user_click_on_user_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 288491900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on the registration menu",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.user_click_on_the_registration_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112660200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on New Password textbox",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.click_on_New_Password_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54375100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Assert that strenght bar is red",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.assert_that_strenght_bar_is_red()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "There should be at least one lowercase char for stronger password and see the level chart change accordingly",
+        "description": "",
+        "id": "registration-page-should-restrict-password-usage-to-a-secure-and-high-level-passcode;there-should-be-at-least-one-lowercase-char-for-stronger-password-and-see-the-level-chart-change-accordingly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 409330600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Enter a password with one uppercase letter",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.enter_a_password_with_one_uppercase_letter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83224900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Observe that strenght bar is yellow",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.observe_that_strenght_bar_is_yellow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90790200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Enter one lowercase letter to password test box",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.enter_one_lowercase_letter_to_password_test_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60239500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Strength Bar must be green",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.strength_Bar_must_be_green()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151098700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on password confirmation textbox",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.click_on_password_confirmation_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272268900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Copy new password text box value to new password confirmation texbox",
+            "match": {
+              "location": "US_003PasswordRestrictionStepDefinition.copy_new_password_text_box_value_to_new_password_confirmation_texbox()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US03pwdR"
+          },
+          {
+            "name": "@US03pwdR01"
+          }
+        ]
+      }
+    ],
+    "name": "Registration page should restrict password usage to a secure and high level passcode",
+    "description": "",
+    "id": "registration-page-should-restrict-password-usage-to-a-secure-and-high-level-passcode",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\US_003PasswordRestriction.feature",
+    "tags": [
+      {
+        "name": "@US03pwdR",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
