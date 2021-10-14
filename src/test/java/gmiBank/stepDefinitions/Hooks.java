@@ -1,10 +1,9 @@
 package gmiBank.stepDefinitions;
 
 import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import gmiBank.utilities.Driver;
-
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -28,12 +27,12 @@ public class Hooks {
     @After
 
     public void tearDown(Scenario scenario){
-//        final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-//        if (scenario.isFailed()) {
+        final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+//      if (scenario.isFailed()) {
 //            scenario.attach(screenshot, "image/png","screenshots");
 //        }
 
-     //       Driver.closeDriver();
+        Driver.closeDriver();
 
 
 
