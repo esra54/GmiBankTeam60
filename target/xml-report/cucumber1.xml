@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="12.934372">
-    <testcase classname="An employee can create new account" name="employee should sign in" time="10.403454">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="25.548482">
+    <testcase classname="An employee can create new account" name="employee should sign in and clicks manage accounts" time="11.711808">
         <system-out>
             <![CDATA[Given An employee navigate signin url "gmibank_signin_url"..................passed
 Then provides username......................................................passed
@@ -13,37 +13,38 @@ And clicks on create new account............................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC01 User should create a description for the new account and it cannot be blank" time="0.801883">
+    <testcase classname="An employee can create new account" name="US013_TC01 User should create a description for the new account and it cannot be blank" time="1.487182">
         <system-out>
             <![CDATA[Given Employee writes description as Saving Account.........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC02 User should provide a balance for the first time account creation as Dollar" time="0.33463">
+    <testcase classname="An employee can create new account" name="US013_TC02 User should provide a balance for the first time account creation as Dollar" time="0.426468">
         <system-out>
             <![CDATA[Given employee clicks on balance text box...................................passed
 And provide balance as number...............................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC03 User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING" time="0.394205">
+    <testcase classname="An employee can create new account" name="US013_TC03 User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING" time="0.50304">
         <system-out>
             <![CDATA[Given Employee clicks on account type dropdown..............................passed
 And selects its status such as CHECKING.....................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED" time="0.529019">
+    <testcase classname="An employee can create new account" name="US013_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED" time="0.65233">
         <system-out>
             <![CDATA[Given Employee clicks on account status type dropdown.......................passed
 And clicks on its type such as ACTIVE.......................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC05 User can select an employee from the drop-down" time="0.471181">
+    <testcase classname="An employee can create new account" name="US013_TC05 User can select an employee from the drop-down" time="10.767654">
         <system-out>
             <![CDATA[Given Employee clicks on employee...........................................passed
 And verify it is selected or not............................................passed
+And employee clicks on save button to create an account.....................passed
 ]]>
         </system-out>
     </testcase>
