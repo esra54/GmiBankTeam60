@@ -1,50 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="12.934372">
-    <testcase classname="An employee can create new account" name="employee should sign in" time="10.403454">
-        <system-out>
-            <![CDATA[Given An employee navigate signin url "gmibank_signin_url"..................passed
-Then provides username......................................................passed
-Then provides password......................................................passed
-And clicks on sign in button................................................passed
-When clicks on language menu................................................passed
-Then clicks on English......................................................passed
-And clicks on manage accounts...............................................passed
-And clicks on create new account............................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="75.87528">
+    <testcase classname="Login page" name="US_005 TC_01 User should not be able to login with invalid username and valid password" time="75.87528">
+        <failure message="cucumber.runtime.CucumberException: Failed to instantiate class gmiBank.stepDefinitions.US_005StepDefinitions&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:63)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:49)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:44)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:40)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;&#10;&#9;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)&#13;&#10;&#9;at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)&#13;&#10;&#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)&#13;&#10;&#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)&#13;&#10;Caused by: java.lang.reflect.InvocationTargetException&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)&#13;&#10;&#9;... 32 more&#13;&#10;Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)&#13;&#10;&#9;at gmiBank.utilities.Driver.getDriver(Driver.java:36)&#13;&#10;&#9;at gmiBank.pages.US_005LoginPage.&lt;init&gt;(US_005LoginPage.java:11)&#13;&#10;&#9;at gmiBank.stepDefinitions.US_005StepDefinitions.&lt;init&gt;(US_005StepDefinitions.java:11)&#13;&#10;&#9;... 37 more&#13;&#10;Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)&#13;&#10;&#9;... 45 more&#13;&#10;">
+            <![CDATA[Given user go to "https://gmibank.com/".....................................failed
+And user click to account menu..............................................skipped
+And user click on sign in...................................................skipped
+And user click on username checkbox.........................................skipped
+And user enter a invalid username...........................................skipped
+And user click on password checkbox.........................................skipped
+And user enter a valid password.............................................skipped
+And user click on Sign in button............................................skipped
+Then verify if the user sign in.............................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException: Failed to instantiate class gmiBank.stepDefinitions.US_005StepDefinitions
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:44)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)
+	... 32 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)
+	at gmiBank.utilities.Driver.getDriver(Driver.java:36)
+	at gmiBank.pages.US_005LoginPage.<init>(US_005LoginPage.java:11)
+	at gmiBank.stepDefinitions.US_005StepDefinitions.<init>(US_005StepDefinitions.java:11)
+	... 37 more
+Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/
+	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
+	... 45 more
 ]]>
-        </system-out>
-    </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC01 User should create a description for the new account and it cannot be blank" time="0.801883">
-        <system-out>
-            <![CDATA[Given Employee writes description as Saving Account.........................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC02 User should provide a balance for the first time account creation as Dollar" time="0.33463">
-        <system-out>
-            <![CDATA[Given employee clicks on balance text box...................................passed
-And provide balance as number...............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC03 User can select an account type as CHECKING, SAVING, CREDIT_CARD or INVESTING" time="0.394205">
-        <system-out>
-            <![CDATA[Given Employee clicks on account type dropdown..............................passed
-And selects its status such as CHECKING.....................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC04 Account status should be defined as ACTIVE, SUSPENDED or CLOSED" time="0.529019">
-        <system-out>
-            <![CDATA[Given Employee clicks on account status type dropdown.......................passed
-And clicks on its type such as ACTIVE.......................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="An employee can create new account" name="US013_TC05 User can select an employee from the drop-down" time="0.471181">
-        <system-out>
-            <![CDATA[Given Employee clicks on employee...........................................passed
-And verify it is selected or not............................................passed
-]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
