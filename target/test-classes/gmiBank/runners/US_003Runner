@@ -12,8 +12,10 @@ import org.junit.runner.RunWith;
         glue = "gmiBank/stepDefinitions",
 
 
-        tags = "@US03pwdR",
-        dryRun = false
+        
+         tags = "@US08pwdChange",
+         dryRun = "true",
+       
 
 
 )
