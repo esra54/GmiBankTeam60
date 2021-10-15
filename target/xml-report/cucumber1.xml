@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="75.87528">
     <testcase classname="Login page" name="US_005 TC_01 User should not be able to login with invalid username and valid password" time="75.87528">
         <failure message="cucumber.runtime.CucumberException: Failed to instantiate class gmiBank.stepDefinitions.US_005StepDefinitions&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:63)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:49)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:44)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:40)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;&#10;&#9;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)&#13;&#10;&#9;at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)&#13;&#10;&#9;at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)&#13;&#10;&#9;at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)&#13;&#10;Caused by: java.lang.reflect.InvocationTargetException&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)&#13;&#10;&#9;... 32 more&#13;&#10;Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)&#13;&#10;&#9;at gmiBank.utilities.Driver.getDriver(Driver.java:36)&#13;&#10;&#9;at gmiBank.pages.US_005LoginPage.&lt;init&gt;(US_005LoginPage.java:11)&#13;&#10;&#9;at gmiBank.stepDefinitions.US_005StepDefinitions.&lt;init&gt;(US_005StepDefinitions.java:11)&#13;&#10;&#9;... 37 more&#13;&#10;Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)&#13;&#10;&#9;at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)&#13;&#10;&#9;... 45 more&#13;&#10;">
@@ -70,6 +71,218 @@ Caused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0
 	at io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)
 	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)
 	... 45 more
+]]>
+        </failure>
+=======
+
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="37.123688">
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_01 SSNTextBox on the registration page should not be left blank" time="18.338495">
+
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the ssnTextBox............................................passed
+And User does not enter the SSNTextBox......................................passed
+Then User see an SSN error message..........................................passed
+]]>
+        </system-out>
+    </testcase>
+
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_02 firstNameTextBox on the registration page should not be left blank" time="1.931671">
+
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the firstNameTextBox......................................passed
+And User does not enter the firstNameTextBox................................passed
+Then User see an firstname error message....................................passed
+]]>
+        </system-out>
+    </testcase>
+
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_03 lastNameTextBox on the registration page should not be left blank" time="1.82963">
+
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the lastNameTextBox.......................................passed
+And User does not enter the lastNameTextBox.................................passed
+Then User see an lastname error message.....................................passed
+]]>
+        </system-out>
+    </testcase>
+
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_04 adresTextBox on the registration page should not be left blank" time="1.693436">
+
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the adresTextBox..........................................passed
+And User does not enter the adresTextBox....................................passed
+Then User see an adres error message........................................passed
+]]>
+        </system-out>
+    </testcase>
+
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_05 phoneNumberTextBox on the registration page should not be left blank" time="1.739388">
+
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the phoneNumberTextBox....................................passed
+And User does not enter the phoneNumberTextBox..............................passed
+Then User see an phoneNumber error message..................................passed
+]]>
+        </system-out>
+    </testcase>
+
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_06 userNameTextBox on the registration page should not be left blank" time="1.703841">
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the userNameTextBox.......................................passed
+And User does not enter the userNameTextBox.................................passed
+Then User see an userName error message.....................................passed
+
+]]>
+        </system-out>
+>>>>>>> master
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_07 emailTextBox on the registration page should not be left blank" time="1.804436">
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the emailTextBox..........................................passed
+And User does not enter the emailTextBox....................................passed
+Then User see an email error message........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_08 newPasswordTextBox on the registration page should not be left blank" time="1.712057">
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the newPasswordTextBox....................................passed
+And User does not enter the newPasswordTextBox..............................passed
+Then User see a newPassword error message...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_09 newPasswordConfirmation on the registration page should not be left blank" time="1.729602">
+        <system-out>
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the newPasswordConfirmation...............................passed
+And User does not enter the newPasswordConfirmation.........................passed
+Then User see a passwordConfirmation error message..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_10 SSN number cannot be of any chars nor spec chars except &quot;-&quot;" time="1.559695">
+        <failure message="org.openqa.selenium.InvalidArgumentException: invalid argument&#10;  (Session info: chrome=94.0.4606.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39992413fd316bcdcffb704577167888&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_SSNnumber_with_chars_or_specific_chars(US_002StepDefinition.java:197)&#13;&#10;&#9;at ✽.User enter an SSNnumber with chars or specific chars(src\test\resources\features\US_002RegistrationPage.feature:59)&#13;&#10;">
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the SSNTextBox............................................passed
+And User enter an SSNnumber with chars or specific chars....................failed
+Then User see an invalid SSN error message..................................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39992413fd316bcdcffb704577167888
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_SSNnumber_with_chars_or_specific_chars(US_002StepDefinition.java:197)
+	at ✽.User enter an SSNnumber with chars or specific chars(src\test\resources\features\US_002RegistrationPage.feature:59)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_11 Mobilephone number cannot be of any chars nor spec chars except &quot;-&quot;" time="1.595154">
+        <failure message="org.openqa.selenium.InvalidArgumentException: invalid argument&#10;  (Session info: chrome=94.0.4606.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39992413fd316bcdcffb704577167888&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_a_mobilePhoneNumber_with_chars_or_spesific_chars(US_002StepDefinition.java:213)&#13;&#10;&#9;at ✽.User enter a mobilePhoneNumber with chars or spesific chars(src\test\resources\features\US_002RegistrationPage.feature:64)&#13;&#10;">
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User click on the phoneTextBox..........................................passed
+And User enter a mobilePhoneNumber with chars or spesific chars.............failed
+Then User see an invalid mobilePhoneNumber error message....................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39992413fd316bcdcffb704577167888
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_a_mobilePhoneNumber_with_chars_or_spesific_chars(US_002StepDefinition.java:213)
+	at ✽.User enter a mobilePhoneNumber with chars or spesific chars(src\test\resources\features\US_002RegistrationPage.feature:64)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US_002  System should not allow anyone to register with invalid credentials" name="US_002 TC_12 email id cannot be created without &quot;@&quot; sign and &quot;.&quot; extensions" time="1.486283">
+        <failure message="org.openqa.selenium.InvalidArgumentException: invalid argument&#10;  (Session info: chrome=94.0.4606.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39992413fd316bcdcffb704577167888&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;&#10;&#9;at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_email_without_and_extensions(US_002StepDefinition.java:228)&#13;&#10;&#9;at ✽.User enter an email without @ and . extensions(src\test\resources\features\US_002RegistrationPage.feature:69)&#13;&#10;">
+            <![CDATA[Given User go to  URL.......................................................passed
+And User clicks on  icon....................................................passed
+And User clicks on registerButton...........................................passed
+And User clicks on emailTextBox.............................................passed
+And User enter an email without @ and . extensions..........................failed
+Then User see an invalid email error message................................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SP2020', ip: '192.168.1.41', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39992413fd316bcdcffb704577167888
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_email_without_and_extensions(US_002StepDefinition.java:228)
+	at ✽.User enter an email without @ and . extensions(src\test\resources\features\US_002RegistrationPage.feature:69)
 ]]>
         </failure>
     </testcase>

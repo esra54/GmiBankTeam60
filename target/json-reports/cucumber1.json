@@ -3,15 +3,70 @@
     "line": 3,
     "elements": [
       {
+<<<<<<< HEAD
         "line": 6,
         "name": "US_005 TC_01 User should not be able to login with invalid username and valid password",
         "description": "",
         "id": "login-page;us-005-tc-01-user-should-not-be-able-to-login-with-invalid-username-and-valid-password",
+=======
+
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17541323600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116656400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 284348800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "US_002 TC_01 SSNTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-01-ssntextbox-on-the-registration-page-should-not-be-left-blank",
+
+>>>>>>> master
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class gmiBank.stepDefinitions.US_005StepDefinitions\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 32 more\r\nCaused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)\r\n\tat gmiBank.utilities.Driver.getDriver(Driver.java:36)\r\n\tat gmiBank.pages.US_005LoginPage.\u003cinit\u003e(US_005LoginPage.java:11)\r\n\tat gmiBank.stepDefinitions.US_005StepDefinitions.\u003cinit\u003e(US_005StepDefinitions.java:11)\r\n\t... 37 more\r\nCaused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)\r\n\t... 45 more\r\n",
               "duration": 75867669600,
               "status": "failed"
@@ -26,11 +81,23 @@
                 }
               ],
               "location": "US_005StepDefinitions.user_go_to(String)"
+=======
+
+              "duration": 109151800,
+
+              "status": "passed"
             },
-            "keyword": "Given "
+            "line": 13,
+            "name": "User click on the ssnTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_ssnTextBox()"
+>>>>>>> master
+            },
+            "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 33000,
               "status": "skipped"
             },
@@ -38,11 +105,65 @@
             "name": "user click to account menu",
             "match": {
               "location": "US_005StepDefinitions.userClickToAccountMenu()"
+=======
+
+              "duration": 140732100,
+
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User does not enter the SSNTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_SSNTextBox()"
             },
             "keyword": "And "
           },
           {
             "result": {
+
+              "duration": 142604000,
+
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User see an SSN error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnSSNErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 1187964900,
+
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+>>>>>>> master
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 11300,
               "status": "skipped"
             },
@@ -50,11 +171,23 @@
             "name": "user click on sign in",
             "match": {
               "location": "US_005StepDefinitions.userClickOnSignIn()"
+=======
+
+              "duration": 210651900,
+
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8900,
               "status": "skipped"
             },
@@ -74,11 +207,47 @@
             "name": "user enter a invalid username",
             "match": {
               "location": "US_005StepDefinitions.user_enter_a_invalid_username()"
+=======
+
+              "duration": 214785500,
+
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "US_002 TC_02 firstNameTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-02-firstnametextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 102125900,
+
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click on the firstNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_firstNameTextBox()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8800,
               "status": "skipped"
             },
@@ -123,19 +292,1031 @@
             "match": {
               "location": "US_005StepDefinitions.verifyIfTheUserSignIn()"
             },
+=======
+
+              "duration": 123185900,
+
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User does not enter the firstNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_firstNameTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92450100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User see an firstname error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnFirstnameErrorMessage()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 784184100,
+
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 424038000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 249580000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "US_002 TC_03 lastNameTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-03-lastnametextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 108548500,
+
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User click on the lastNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_lastNameTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
+              "duration": 176520700,
+
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User does not enter the lastNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_lastNameTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85545000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User see an lastname error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnLastnameErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 989140600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 172948900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239687900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "US_002 TC_04 adresTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-04-adrestextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 83363500,
+
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click on the adresTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_adresTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
+              "duration": 102269700,
+
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User does not enter the adresTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_adresTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105439300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User see an adres error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnAdresErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 987228700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 183331300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226365500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "US_002 TC_05 phoneNumberTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-05-phonenumbertextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 111556000,
+
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User click on the phoneNumberTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_phoneNumberTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
+              "duration": 150343200,
+
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User does not enter the phoneNumberTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_phoneNumberTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80047000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User see an phoneNumber error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnPhoneNumberErrorMessage()"
+            },
+>>>>>>> master
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+<<<<<<< HEAD
             "name": "@Loginpage"
           },
           {
             "name": "@US_005-TC_01"
+=======
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000109400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 164914500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251981000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "US_002 TC_06 userNameTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-06-usernametextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+
+              "duration": 118643000,
+
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User click on the userNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_userNameTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
+              "duration": 116759600,
+
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User does not enter the userNameTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_userNameTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+
+              "duration": 50671100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User see an userName error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnUserNameErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 760178200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 403766500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232665500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "US_002 TC_07 emailTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-07-emailtextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97378200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User click on the emailTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_emailTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 229195700,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User does not enter the emailTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_emailTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80568000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User see an email error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnEmailErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1006114100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144581000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 254845700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "US_002 TC_08 newPasswordTextBox on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-08-newpasswordtextbox-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 96000500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User click on the newPasswordTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_newPasswordTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145333700,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User does not enter the newPasswordTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_newPasswordTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64752300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User see a newPassword error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeANewPasswordErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 996462400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 191304700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224084500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 52,
+        "name": "US_002 TC_09 newPasswordConfirmation on the registration page should not be left blank",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-09-newpasswordconfirmation-on-the-registration-page-should-not-be-left-blank",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88272400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User click on the newPasswordConfirmation",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_newPasswordConfirmation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163778300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User does not enter the newPasswordConfirmation",
+            "match": {
+              "location": "US_002StepDefinition.user_does_not_enter_the_newPasswordConfirmation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65291600,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User see a passwordConfirmation error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAPasswordConfirmationErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 987580100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152780700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 234612100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "US_002 TC_10 SSN number cannot be of any chars nor spec chars except \"-\"",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-10-ssn-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88262800,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User click on the SSNTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_SSNTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument\n  (Session info: chrome\u003d94.0.4606.81)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SP2020\u0027, ip: \u0027192.168.1.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 39992413fd316bcdcffb704577167888\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_SSNnumber_with_chars_or_specific_chars(US_002StepDefinition.java:197)\r\n\tat ✽.User enter an SSNnumber with chars or specific chars(src\\test\\resources\\features\\US_002RegistrationPage.feature:59)\r\n",
+              "duration": 95715400,
+              "status": "failed"
+            },
+            "line": 59,
+            "name": "User enter an SSNnumber with chars or specific chars",
+            "match": {
+              "location": "US_002StepDefinition.user_enter_an_SSNnumber_with_chars_or_specific_chars()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "User see an invalid SSN error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnInvalidSSNErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1053084100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156754200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211366000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "US_002 TC_11 Mobilephone number cannot be of any chars nor spec chars except \"-\"",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-11-mobilephone-number-cannot-be-of-any-chars-nor-spec-chars-except-\"-\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 120031300,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User click on the phoneTextBox",
+            "match": {
+              "location": "US_002StepDefinition.user_click_on_the_phoneTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument\n  (Session info: chrome\u003d94.0.4606.81)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SP2020\u0027, ip: \u0027192.168.1.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 39992413fd316bcdcffb704577167888\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat gmiBank.stepDefinitions.US_002StepDefinition.user_enter_a_mobilePhoneNumber_with_chars_or_spesific_chars(US_002StepDefinition.java:213)\r\n\tat ✽.User enter a mobilePhoneNumber with chars or spesific chars(src\\test\\resources\\features\\US_002RegistrationPage.feature:64)\r\n",
+              "duration": 53516500,
+              "status": "failed"
+            },
+            "line": 64,
+            "name": "User enter a mobilePhoneNumber with chars or spesific chars",
+            "match": {
+              "location": "US_002StepDefinition.user_enter_a_mobilePhoneNumber_with_chars_or_spesific_chars()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4100,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "User see an invalid mobilePhoneNumber error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnInvalidMobilePhoneNumberErrorMessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1007731300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User go to  URL",
+            "match": {
+              "location": "US_002StepDefinition.user_go_to_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197347300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on  icon",
+            "match": {
+              "location": "US_002StepDefinition.user_clicks_on_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 219979800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on registerButton",
+            "match": {
+              "location": "US_001RegistrationStepDefinition.user_clicks_on_registerButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 67,
+        "name": "US_002 TC_12 email id cannot be created without \"@\" sign and \".\" extensions",
+        "description": "",
+        "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-12-email-id-cannot-be-created-without-\"@\"-sign-and-\".\"-extensions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52100,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "User clicks on emailTextBox",
+            "match": {
+              "location": "US_002StepDefinition.userClicksOnEmailTextBox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.InvalidArgumentException: invalid argument\n  (Session info: chrome\u003d94.0.4606.81)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SP2020\u0027, ip: \u0027192.168.1.41\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.10\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56749}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 39992413fd316bcdcffb704577167888\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat gmiBank.stepDefinitions.US_002StepDefinition.user_enter_an_email_without_and_extensions(US_002StepDefinition.java:228)\r\n\tat ✽.User enter an email without @ and . extensions(src\\test\\resources\\features\\US_002RegistrationPage.feature:69)\r\n",
+              "duration": 60700600,
+              "status": "failed"
+            },
+            "line": 69,
+            "name": "User enter an email without @ and . extensions",
+            "match": {
+              "location": "US_002StepDefinition.user_enter_an_email_without_and_extensions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3800,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "User see an invalid email error message",
+            "match": {
+              "location": "US_002StepDefinition.userSeeAnInvalidEmailErrorMessage()"
+            },
+            "keyword": "Then "
+
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Registration002"
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "Login page",
     "description": "",
     "id": "login-page",
@@ -144,6 +1325,16 @@
     "tags": [
       {
         "name": "@Loginpage",
+=======
+    "name": "US_002  System should not allow anyone to register with invalid credentials",
+    "description": "    seeing the message \"If you want to sign in, you can try the default\n    accounts:- Administrator (login\u003d\"admin\" and password\u003d\"admin\")\n    - User (login\u003d\"user\" and password\u003d\"user\").",
+    "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\US_002RegistrationPage.feature",
+    "tags": [
+      {
+        "name": "@Registration002",
+>>>>>>> master
         "type": "Tag",
         "location": {
           "line": 1,
