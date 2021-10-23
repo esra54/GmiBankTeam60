@@ -1,138 +1,88 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src\\test\\resources\\features\\US_003PasswordRestriction.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src\\test\\resources\\features\\US_008PasswordChange.feature");
 formatter.feature({
-  "name": "Registration page should restrict password usage to a secure and high level passcode",
+  "name": "Password Change Should be done",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@US03pwdR"
+      "name": "@US008pwdChange"
     }
   ]
 });
 formatter.background({
-  "name": "User go to the gmi bank url",
+  "name": "User  should be logged in gmi bank and navigate to password page",
   "description": "",
   "keyword": "Background"
 });
 formatter.step({
-  "name": "User go to the GMi Bank home page",
+  "name": "Go to the GMi Bank home page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.user_go_to_the_GMi_Bank_home_page()"
+  "location": "US_008PasswordChangeStepDefiniton.go_to_the_GMi_Bank_home_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click on user icon",
+  "name": "click on user icon",
   "keyword": "And "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.user_click_on_user_icon()"
+  "location": "US_008PasswordChangeStepDefiniton.click_on_user_icon()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click on the registration menu",
+  "name": "sign in with a valid username and password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.user_click_on_the_registration_menu()"
+  "location": "US_008PasswordChangeStepDefiniton.sign_in_with_a_valid_username_and_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on New Password textbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.click_on_New_Password_textbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Assert that strenght bar is red",
+  "name": "Click on the password menu",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.assert_that_strenght_bar_is_red()"
+  "location": "US_008PasswordChangeStepDefiniton.click_on_the_password_menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "There should be at least one lowercase char for stronger password and see the level chart change accordingly",
+  "name": "The old password should not be used",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@US03pwdR"
+      "name": "@US008pwdChange"
     },
     {
-      "name": "@US03pwdR01"
+      "name": "@US_008_01"
     }
   ]
 });
 formatter.step({
-  "name": "Enter a password with one uppercase letter",
-  "keyword": "And "
+  "name": "User enters the old password as new password",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.enter_a_password_with_one_uppercase_letter()"
+  "location": "US_008PasswordChangeStepDefiniton.user_enters_the_old_password_as_new_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Observe that strenght bar is yellow",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.observe_that_strenght_bar_is_yellow()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter one lowercase letter to password test box",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.enter_one_lowercase_letter_to_password_test_box()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Strength Bar must be green",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.strength_Bar_must_be_green()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on password confirmation textbox",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.click_on_password_confirmation_textbox()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Copy new password text box value to new password confirmation texbox",
+  "name": "Check the fail message",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "US_003PasswordRestrictionStepDefinition.copy_new_password_text_box_value_to_new_password_confirmation_texbox()"
+  "location": "US_008PasswordChangeStepDefiniton.check_the_fail_message()"
 });
 formatter.result({
   "status": "passed"
