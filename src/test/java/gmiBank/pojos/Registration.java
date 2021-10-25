@@ -1,6 +1,6 @@
 package gmiBank.pojos;
 
-public class Registrants {
+public class Registration {
    private int id;
    private String ssn;
    private String firstName;
