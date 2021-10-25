@@ -49,6 +49,10 @@ public class Customer {
         this.accounts = accounts;
     }
 
+    public Customer() {
+
+    }
+
     public int getId() {
         return id;
     }
