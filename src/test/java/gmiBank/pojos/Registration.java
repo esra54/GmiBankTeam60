@@ -1,13 +1,15 @@
 package gmiBank.pojos;
 
 public class Registration {
-    private int id;
-    private String ssn;
-    private String firstName;
-    private String lastName;
-    private String address;
-    private String mobilePhoneNumber;
-    private int   userId;
+
+   private int id;
+   private String ssn;
+   private String firstName;
+   private String lastName;
+   private String address;
+   private String mobilePhoneNumber;
+   private int   userId;
+
 
     public int getId() {
         return id;
@@ -90,7 +92,12 @@ public class Registration {
     }
 
     private String  userName;
-    private String email;
-    private String createDate;
+
+   private String email;
+   private String createDate;
+
+
 
 }
+
+
