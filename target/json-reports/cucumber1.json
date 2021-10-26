@@ -1,8 +1,15 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
+<<<<<<< HEAD
+        "line": 6,
+        "name": "US_005 TC_01 User should not be able to login with invalid username and valid password",
+        "description": "",
+        "id": "login-page;us-005-tc-01-user-should-not-be-able-to-login-with-invalid-username-and-valid-password",
+=======
+
         "line": 7,
         "name": "",
         "description": "",
@@ -52,24 +59,56 @@
         "name": "US_002 TC_01 SSNTextBox on the registration page should not be left blank",
         "description": "",
         "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials;us-002-tc-01-ssntextbox-on-the-registration-page-should-not-be-left-blank",
+
+>>>>>>> master
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class gmiBank.stepDefinitions.US_005StepDefinitions\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:63)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:49)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:44)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:40)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:67)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:22)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:72)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:122)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:64)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:131)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 32 more\r\nCaused by: io.github.bonigarcia.wdm.WebDriverManagerException: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:776)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:773)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:766)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:550)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:260)\r\n\tat gmiBank.utilities.Driver.getDriver(Driver.java:36)\r\n\tat gmiBank.pages.US_005LoginPage.\u003cinit\u003e(US_005LoginPage.java:11)\r\n\tat gmiBank.stepDefinitions.US_005StepDefinitions.\u003cinit\u003e(US_005StepDefinitions.java:11)\r\n\t... 37 more\r\nCaused by: io.github.bonigarcia.wdm.WebDriverManagerException: chromedriver 94.0.4606.61 for WIN64 not found in http://npm.taobao.org/mirrors/chromedriver/\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.downloadAndExport(WebDriverManager.java:575)\r\n\tat io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:547)\r\n\t... 45 more\r\n",
+              "duration": 75867669600,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user go to \"https://gmibank.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://gmibank.com/\"",
+                  "offset": 11
+                }
+              ],
+              "location": "US_005StepDefinitions.user_go_to(String)"
+=======
+
               "duration": 109151800,
+
               "status": "passed"
             },
             "line": 13,
             "name": "User click on the ssnTextBox",
             "match": {
               "location": "US_002StepDefinition.user_click_on_the_ssnTextBox()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 33000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user click to account menu",
+            "match": {
+              "location": "US_005StepDefinitions.userClickToAccountMenu()"
+=======
+
               "duration": 140732100,
+
               "status": "passed"
             },
             "line": 14,
@@ -81,7 +120,9 @@
           },
           {
             "result": {
+
               "duration": 142604000,
+
               "status": "passed"
             },
             "line": 15,
@@ -107,31 +148,69 @@
         "steps": [
           {
             "result": {
+
               "duration": 1187964900,
+
               "status": "passed"
             },
             "line": 8,
             "name": "User go to  URL",
             "match": {
               "location": "US_002StepDefinition.user_go_to_URL()"
+>>>>>>> master
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 11300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click on sign in",
+            "match": {
+              "location": "US_005StepDefinitions.userClickOnSignIn()"
+=======
+
               "duration": 210651900,
+
               "status": "passed"
             },
             "line": 9,
             "name": "User clicks on  icon",
             "match": {
               "location": "US_002StepDefinition.user_clicks_on_icon()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 8900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click on username checkbox",
+            "match": {
+              "location": "US_005StepDefinitions.user_click_on_username_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user enter a invalid username",
+            "match": {
+              "location": "US_005StepDefinitions.user_enter_a_invalid_username()"
+=======
+
               "duration": 214785500,
+
               "status": "passed"
             },
             "line": 10,
@@ -153,19 +232,70 @@
         "steps": [
           {
             "result": {
+
               "duration": 102125900,
+
               "status": "passed"
             },
             "line": 18,
             "name": "User click on the firstNameTextBox",
             "match": {
               "location": "US_002StepDefinition.user_click_on_the_firstNameTextBox()"
+>>>>>>> master
             },
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
+              "duration": 8800,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click on password checkbox",
+            "match": {
+              "location": "US_005StepDefinitions.user_click_on_password_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8700,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enter a valid password",
+            "match": {
+              "location": "US_005StepDefinitions.user_enter_a_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8200,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user click on Sign in button",
+            "match": {
+              "location": "US_005StepDefinitions.userClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify if the user sign in",
+            "match": {
+              "location": "US_005StepDefinitions.verifyIfTheUserSignIn()"
+            },
+=======
+
               "duration": 123185900,
+
               "status": "passed"
             },
             "line": 19,
@@ -203,7 +333,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 784184100,
+
               "status": "passed"
             },
             "line": 8,
@@ -249,7 +381,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 108548500,
+
               "status": "passed"
             },
             "line": 23,
@@ -261,7 +395,9 @@
           },
           {
             "result": {
+
               "duration": 176520700,
+
               "status": "passed"
             },
             "line": 24,
@@ -345,7 +481,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 83363500,
+
               "status": "passed"
             },
             "line": 28,
@@ -357,7 +495,9 @@
           },
           {
             "result": {
+
               "duration": 102269700,
+
               "status": "passed"
             },
             "line": 29,
@@ -441,7 +581,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 111556000,
+
               "status": "passed"
             },
             "line": 33,
@@ -453,7 +595,9 @@
           },
           {
             "result": {
+
               "duration": 150343200,
+
               "status": "passed"
             },
             "line": 34,
@@ -473,11 +617,18 @@
             "match": {
               "location": "US_002StepDefinition.userSeeAnPhoneNumberErrorMessage()"
             },
+>>>>>>> master
             "keyword": "Then "
           }
         ],
         "tags": [
           {
+<<<<<<< HEAD
+            "name": "@Loginpage"
+          },
+          {
+            "name": "@US_005-TC_01"
+=======
             "name": "@Registration002"
           }
         ]
@@ -537,7 +688,9 @@
         "steps": [
           {
             "result": {
+
               "duration": 118643000,
+
               "status": "passed"
             },
             "line": 38,
@@ -549,7 +702,9 @@
           },
           {
             "result": {
+
               "duration": 116759600,
+
               "status": "passed"
             },
             "line": 39,
@@ -561,6 +716,7 @@
           },
           {
             "result": {
+
               "duration": 50671100,
               "status": "passed"
             },
@@ -1149,15 +1305,27 @@
               "location": "US_002StepDefinition.userSeeAnInvalidEmailErrorMessage()"
             },
             "keyword": "Then "
+
           }
         ],
         "tags": [
           {
             "name": "@Registration002"
+>>>>>>> master
           }
         ]
       }
     ],
+<<<<<<< HEAD
+    "name": "Login page",
+    "description": "",
+    "id": "login-page",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\US_005.feature",
+    "tags": [
+      {
+        "name": "@Loginpage",
+=======
     "name": "US_002  System should not allow anyone to register with invalid credentials",
     "description": "    seeing the message \"If you want to sign in, you can try the default\n    accounts:- Administrator (login\u003d\"admin\" and password\u003d\"admin\")\n    - User (login\u003d\"user\" and password\u003d\"user\").",
     "id": "us-002--system-should-not-allow-anyone-to-register-with-invalid-credentials",
@@ -1166,6 +1334,7 @@
     "tags": [
       {
         "name": "@Registration002",
+>>>>>>> master
         "type": "Tag",
         "location": {
           "line": 1,

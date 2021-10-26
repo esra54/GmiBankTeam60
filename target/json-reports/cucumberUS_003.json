@@ -1,0 +1,121 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User  should be logged in gmi bank and navigate to password page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 28772413000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Go to the GMi Bank home page",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.go_to_the_GMi_Bank_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 181754400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on user icon",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.click_on_user_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1043317200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "sign in with a valid username and password",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.sign_in_with_a_valid_username_and_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6248008200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on the password menu",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.click_on_the_password_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "The old password should not be used",
+        "description": "",
+        "id": "password-change-should-be-done;the-old-password-should-not-be-used",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7170574200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User enters the old password as new password",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.user_enters_the_old_password_as_new_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 353410300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Check the fail message",
+            "match": {
+              "location": "US_008PasswordChangeStepDefiniton.check_the_fail_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US008pwdChange"
+          },
+          {
+            "name": "@US_008_01"
+          }
+        ]
+      }
+    ],
+    "name": "Password Change Should be done",
+    "description": "",
+    "id": "password-change-should-be-done",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\US_008PasswordChange.feature",
+    "tags": [
+      {
+        "name": "@US008pwdChange",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="43.776159">
+    <testcase classname="Password Change Should be done" name="The old password should not be used" time="43.776159">
+        <system-out>
+            <![CDATA[Given Go to the GMi Bank home page..........................................passed
+And click on user icon......................................................passed
+And sign in with a valid username and password..............................passed
+Then Click on the password menu.............................................passed
+When User enters the old password as new password...........................passed
+Then Check the fail message.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
