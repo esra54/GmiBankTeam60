@@ -7,6 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import gmiBank.pojos.Customer;
+import gmiBank.utilities.ReadToTxt;
 import gmiBank.utilities.WriteToTxt;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -76,27 +77,27 @@ public class US_020StepDefinitions {
         }
 
         System.out.println("all customer names :" + customerDataNames);
-//
-//
-//        //dosyalara kendisi yeni isimler veriyor
-//        Faker faker = new Faker();
-//        customerFakerNames = faker.name().title();
-//
-//        //dosyamiza isimleri yazdiralim
-//        WriteToTxt.saveDataInFileWithCustomerFirstName(customerFakerNames,customer);
-//        //isimleri okutalim, assertion icin mutlaka okutmamiz gerek
-//        List<String> readcustomerNames = ReadTxt.returnCountryNameList(customerFakerNames);
-//
+
+
+       //dosyalara kendisi yeni isimler veriyor
+      Faker faker = new Faker();
+        customerFakerNames = faker.name().title();
+
+        //dosyamiza isimleri yazdiralim
+       WriteToTxt.saveDataInFileWithCustomerFirstName(customerFakerNames,customer);
+        //isimleri okutalim, assertion icin mutlaka okutmamiz gerek
+        List<String> readcustomerNames = ReadToTxt.returnCountryNameList(customerFakerNames);
+
     }
 
-    //    @And("validate customer datas")
-//    public void validateCustomerDatas() {
-//        //okuttugum dosyada isimlerim var mi?
-//        Assert.assertEquals(customerDatasNames,readCustomerNames);
-//        System.out.println("passed");
-//
-//    }
-//
+        @And("validate customer datas")
+    public void validateCustomerDatas() {
+        //okuttugum dosyada isimlerim var mi?
+        Assert.assertEquals(customerDatasNames,readCustomerNames);
+        System.out.println("passed");
+
+    }
+
     @Given("read customer datas using api endpoint {string}")
     public void readCustomerDatasUsingApiEndpoint(String api_endpoint) {
         response = given().headers("Authorization",
