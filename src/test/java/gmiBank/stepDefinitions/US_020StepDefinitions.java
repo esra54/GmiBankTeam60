@@ -7,6 +7,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import gmiBank.pojos.Customer;
+import gmiBank.utilities.ConfigurationReader;
 import gmiBank.utilities.ReadToTxt;
 import gmiBank.utilities.WriteToTxt;
 import io.restassured.RestAssured;
@@ -16,6 +17,7 @@ import io.restassured.response.Response;
 import org.junit.Assert;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import static io.restassured.RestAssured.given;
@@ -101,12 +103,12 @@ public class US_020StepDefinitions {
     @Given("read customer datas using api endpoint {string}")
     public void readCustomerDatasUsingApiEndpoint(String api_endpoint) {
         response = given().headers("Authorization",
-                "Bearer " + token,
+                "Bearer " + ConfigurationReader.getProperty("token"),
                 "ContentType.Json", ContentType.JSON, "Accept", ContentType.JSON)
                 .when()
                 .get(api_endpoint).then()
                 .contentType(ContentType.JSON).extract().response();
-        //   response.prettyPrint();
+          response.prettyPrint();
     }
 
     @Then("validate customers one by one")
@@ -114,10 +116,12 @@ public class US_020StepDefinitions {
 
         JsonPath jsonPath = response.jsonPath();
         String customerNames = jsonPath.getString("firstName");
-        Assert.assertTrue("not found", customerNames.contains("Nikita"));
+        System.out.println("customerNames : "+customerNames);
+        Assert.assertTrue("not found", customerDatasNames.contains("Nikita"));
 
         String customerLastName = jsonPath.getString("lastName");
-        Assert.assertTrue("not found", customerLastName.contains("Ernser"));
+        System.out.println("customerLastName :"+customerLastName);
+         Assert.assertTrue("not found", customerLastName.contains("Ernser"));
 
         System.out.println("passed");
 

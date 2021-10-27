@@ -9,9 +9,10 @@ import gmiBank.pages.US_013EmployeeAccount;
 import gmiBank.utilities.ConfigurationReader;
 import gmiBank.utilities.Driver;
 import gmiBank.utilities.ReusableMetods;
+import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+
 
 public class US_013StepDefinitions {
     US_013EmployeeAccount us013 = new US_013EmployeeAccount();
@@ -122,7 +123,7 @@ public class US_013StepDefinitions {
     @And("verify it is selected or not")
     public void verifyItIsSelectedOrNot() {
         System.out.println(us013.employeeTextBox.isSelected());
-        Assert.assertFalse(false,"nothing in the textbox, there is a bug needs to be fixed");
+        Assert.assertFalse("nothing in the textbox, there is a bug needs to be fixed",false);
     }
 
     @And("employee clicks on save button to create an account")
