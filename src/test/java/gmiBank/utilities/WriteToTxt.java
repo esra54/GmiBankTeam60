@@ -197,7 +197,15 @@ public class WriteToTxt {
 
     }
 
-
+    public static void saveDataInFileWithCountry6Name(String fileName, Country[] countries) {
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            for (int i = 0; i < countries.length; i++)
+                writer.append(countries[i].getName() + "\n");
+            writer.close();
+        } catch (Exception e) {
+        }
+    }
 
 
 
