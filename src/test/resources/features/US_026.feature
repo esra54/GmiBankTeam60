@@ -5,6 +5,9 @@ Feature:Api testing US_026
     Then read all countries and write country ids to txt using api endpoint "https://www.gmibank.com/api/tp-countries"
 #    Given user enters to url to get token "https://www.gmibank.com/api/authenticate"
 
+
+
+
   @US_026_creata_country
     Scenario: Create a country
     And user creates an country "https://www.gmibank.com/api/tp-countries"
