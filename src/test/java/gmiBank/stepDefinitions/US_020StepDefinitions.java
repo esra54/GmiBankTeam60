@@ -117,7 +117,7 @@ public class US_020StepDefinitions {
         JsonPath jsonPath = response.jsonPath();
         String customerNames = jsonPath.getString("firstName");
         System.out.println("customerNames : "+customerNames);
-        Assert.assertTrue("not found", customerDatasNames.contains("Nikita"));
+        Assert.assertTrue("not found",customerNames.contains("Nikita"));
 
         String customerLastName = jsonPath.getString("lastName");
         System.out.println("customerLastName :"+customerLastName);
