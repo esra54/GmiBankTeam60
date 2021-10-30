@@ -12,8 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "gmiBank/stepDefinitions",
 
-
-        tags = "@employeecreateaccount",
+        tags = "@api_demo",
         dryRun = false
 
 
