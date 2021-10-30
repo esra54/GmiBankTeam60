@@ -1,5 +1,5 @@
 
-Feature: System should allow Admin to manage a customer
+Feature: System should allow Admin to see view option
   Scenario:Admin can make edit using view option
     Given Admin navigates to "gmibank_signin_url"
     Then types username and password
